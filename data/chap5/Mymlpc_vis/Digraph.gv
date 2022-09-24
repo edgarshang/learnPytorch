@@ -1,0 +1,42 @@
+digraph {
+	graph [size="12,12"]
+	node [align=left fontsize=12 height=0.2 ranksep=0.1 shape=box style=filled]
+	112427129264 [label=ThresholdBackward0 fillcolor=darkolivegreen1]
+	112397298040 -> 112427129264
+	112397298040 [label=AddmmBackward]
+	112397298880 -> 112397298040
+	112397298880 [label="hidden1.0.bias
+ (30)" fillcolor=lightblue]
+	112397296192 -> 112397298040
+	112397296192 [label="x
+ (1, 57)" fillcolor=lightblue]
+	112397297592 -> 112397298040
+	112397297592 [label=TBackward]
+	112397299664 -> 112397297592
+	112397299664 [label="hidden1.0.weight
+ (30, 57)" fillcolor=lightblue]
+	112397299048 [label=ThresholdBackward0 fillcolor=darkolivegreen1]
+	112397299608 -> 112397299048
+	112397299608 [label=AddmmBackward]
+	112397296360 -> 112397299608
+	112397296360 [label="hidden2.0.bias
+ (10)" fillcolor=lightblue]
+	112427129264 -> 112397299608
+	112397297536 -> 112397299608
+	112397297536 [label=TBackward]
+	112397298488 -> 112397297536
+	112397298488 [label="hidden2.0.weight
+ (10, 30)" fillcolor=lightblue]
+	112397296304 [label=SigmoidBackward fillcolor=darkolivegreen1]
+	112397298712 -> 112397296304
+	112397298712 [label=AddmmBackward]
+	112397298320 -> 112397298712
+	112397298320 [label="classifica.0.bias
+ (2)" fillcolor=lightblue]
+	112397299048 -> 112397298712
+	112397296640 -> 112397298712
+	112397296640 [label=TBackward]
+	112397297760 -> 112397296640
+	112397297760 [label="classifica.0.weight
+ (2, 10)" fillcolor=lightblue]
+}
